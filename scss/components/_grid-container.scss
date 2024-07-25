@@ -1,0 +1,23 @@
+
+.grid-container, .grid-container--contacto, .grid-container--promociones, .grid-container--productos, .grid-container--historia, .grid-container--index {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    overflow-y: hidden;
+  }
+  .grid-container--index {
+    grid-template-areas: "barra barra barra barra barra" "banner banner banner banner banner" "productos productos productos productos productos" "arte-cafe arte-cafe arte-cafe arte-cafe arte-cafe" "visitanos visitanos visitanos visitanos visitanos" "pie pie pie pie pie";
+  }
+  .grid-container--historia {
+    grid-template-areas: "barra barra barra barra barra" "banner banner banner banner banner" "historia historia historia historia historia" "visitanos visitanos visitanos visitanos visitanos" "pie pie pie pie pie";
+  }
+  .grid-container--productos {
+    grid-template-areas: "barra barra barra barra barra" "banner banner banner banner banner" "nuestros-productos nuestros-productos nuestros-productos nuestros-productos nuestros-productos" "visitanos visitanos visitanos visitanos visitanos" "pie pie pie pie pie";
+  }
+  .grid-container--promociones {
+    grid-template-areas: "barra barra barra barra barra" "banner banner banner banner banner" "resenas resenas resenas resenas resenas" "visitanos visitanos visitanos visitanos visitanos" "pie pie pie pie pie";
+  }
+  .grid-container--contacto {
+    grid-template-areas: "barra barra barra barra barra" "banner banner banner banner banner" "contacto contacto contacto contacto contacto" "visitanos visitanos visitanos visitanos visitanos" "pie pie pie pie pie";
+  }
+  

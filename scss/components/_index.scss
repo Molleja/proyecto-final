@@ -1,0 +1,37 @@
+.que-es-dony {
+    grid-area: arte-cafe;
+    margin: 10px;
+  }
+  .que-es-dony__card {
+    display: flex;
+  }
+  .que-es-dony__card img {
+    height: 300px;
+    border-radius: 10px;
+  }
+  .que-es-dony__card p {
+    margin-left: 30px;
+  }
+
+  .main {
+    grid-area: productos;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/6;
+  }
+
+  
+.title-primary {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.perfume__image {
+  width: 250px;  
+  height: auto;  
+}
+
+  
+ 

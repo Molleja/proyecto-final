@@ -1,0 +1,53 @@
+
+.nuestros-productos {
+    grid-area: nuestros-productos;
+  }
+  .nuestros-productos__collection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .nuestros-productos__collection__item {
+    margin-top: 20px;
+    text-align: center;
+    height: 330px;
+    font-weight: bold;
+  }
+  .nuestros-productos__collection__item img {
+    height: 275px;
+  }
+  
+  .card {
+    width: 18rem;
+  }
+
+  
+  .productos {
+    grid-area: productos;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/6;
+  }
+  .productos__collection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .productos__collection__card {
+    height: 395px;
+    width: 400px;
+    text-align: center;
+    margin: 10px;
+  }
+  .productos__collection__card img {
+    height: 300px;
+    width: 350px;
+    border-radius: 10px;
+    max-width: 100%;
+  }
+  .productos__collection__card p {
+    margin-top: 5px;
+  }
+  

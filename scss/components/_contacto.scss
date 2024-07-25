@@ -1,0 +1,29 @@
+.contacto {
+    grid-area: contacto;
+  }
+  .contacto p {
+    text-align: center;
+  }
+  .contacto__form {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5%;
+    border-radius: 10px;
+    background-color: $color-form-contacto;
+    padding: 10px;
+    align-items: center;
+    max-width: 100%;
+  }
+  .contacto__form__btn button {
+    width: 200px;
+    transition: all 0.2s ease-in-out !important;
+  }
+  .contacto__form__btn button:hover {
+    transform: scale(1.1) !important;
+  }
+  .contacto__form__input {
+    width: 500px !important;
+  }
+  .contacto__form__input--mensaje {
+    height: 170px !important;
+  }

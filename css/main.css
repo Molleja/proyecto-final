@@ -1,0 +1,482 @@
+/*SASS*/
+/* Vars */
+* {
+  font-family: "Inter", sans-serif !important;
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 480px) {
+  .barra__logo img {
+    height: 55px;
+    width: 55px;
+  }
+  .barra__logo h1 {
+    font-size: 27px;
+  }
+  .banner p {
+    margin-left: 1%;
+  }
+  .arte-cafe__card img {
+    max-width: 100%;
+  }
+  .pie {
+    flex-direction: column;
+  }
+  .pie img {
+    height: 55px;
+    width: 55px;
+  }
+  .contacto__form__input {
+    width: 300px !important;
+  }
+}
+@media (max-width: 340px) {
+  .grid-container--index {
+    overflow-x: hidden;
+  }
+  .grid-container--quienes-somos {
+    overflow-x: hidden;
+  }
+  .grid-container--productos {
+    overflow-x: hidden;
+  }
+  .grid-container--resenas {
+    overflow-x: hidden;
+  }
+  .grid-container--contacto {
+    overflow-x: hidden;
+  }
+  .barra__logo {
+    justify-content: space-evenly;
+  }
+  .barra__logo img {
+    height: 40px;
+    width: 40px;
+  }
+  .productos__collection__card p {
+    display: none;
+  }
+  .productos__collection__card {
+    height: 100%;
+  }
+  .resenas__collection__card {
+    height: 100%;
+    width: 100%;
+  }
+  .resenas__collection__card__persona {
+    height: 100%;
+    max-width: 100%;
+  }
+  .resenas__collection__card__persona img {
+    max-width: 100%;
+  }
+  .resenas__collection__card svg {
+    max-width: 100%;
+  }
+  .resenas_collection__card__texto {
+    display: none;
+  }
+  .contacto__form__input {
+    width: 200px !important;
+  }
+}
+@media (max-width: 768px) {
+  .grid-container, .grid-container--index, .grid-container--quienes-somos, .grid-container--productos, .grid-container--resenas, .grid-container--contacto {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+  .grid-container--index {
+    grid-template-areas: "barra barra" "banner banner" "productos productos" "arte-cafe arte-cafe" "visitanos visitanos" "pie pie";
+  }
+  .grid-container--quienes-somos {
+    display: grid;
+    grid-template-areas: "barra barra" "banner banner" "historia historia" "visitanos visitanos" "pie pie";
+  }
+  .grid-container--productos {
+    grid-template-areas: "barra barra" "banner banner" "nuestros-productos nuestros-productos" "visitanos visitanos" "pie pie";
+  }
+  .grid-container--resenas {
+    grid-template-areas: "barra barra" "banner banner" "resenas resenas" "visitanos visitanos" "pie pie";
+  }
+  .grid-container--contacto {
+    grid-template-areas: "barra barra" "banner banner" "contacto contacto" "visitanos visitanos" "pie pie";
+  }
+  .banner--index {
+    background-position: left;
+  }
+  .banner--quienessomos {
+    background-position: right;
+  }
+  .arte-cafe__card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+  .arte-cafe__card p {
+    margin-top: 10px;
+  }
+  .visitanos__collection iframe {
+    max-width: 100%;
+  }
+  .visitanos_collection__items {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .visitanos__collection--horario {
+    justify-content: center;
+  }
+  .historia__collection_card, .historia__collection_card--two {
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+  }
+  .historia__collection_card img, .historia__collection_card--two img {
+    height: 300px;
+    max-width: 100%;
+  }
+}
+.que-es-dony {
+  grid-area: arte-cafe;
+  margin: 10px;
+}
+
+.que-es-dony__card {
+  display: flex;
+}
+
+.que-es-dony__card img {
+  height: 300px;
+  border-radius: 10px;
+}
+
+.que-es-dony__card p {
+  margin-left: 30px;
+}
+
+.main {
+  grid-area: productos;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1/6;
+}
+
+.title-primary {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.perfume__image {
+  width: 250px;
+  height: auto;
+}
+
+.banner {
+  grid-area: banner;
+  display: flex;
+  border-radius: 10px;
+  background-color: #d69e67;
+  background-size: cover;
+  background-position: center;
+  justify-content: end;
+  height: 320px;
+  margin: 0.5%;
+  max-width: 100%;
+  grid-column: 1/6;
+}
+
+.banner p {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 45px;
+  display: flex;
+  align-items: center;
+  margin-right: 10%;
+  height: 85%;
+}
+
+.banner--index {
+  background-image: url("https://img.freepik.com/fotos-premium/ilustracion-vectorial-fondo-o-banner-camisetas-coloridas_719646-697.jpg");
+}
+
+.banner--productos {
+  background-image: url("https://www.copiplan.com.uy/wp-content/uploads/2023/06/camiseta-grafica-mockup-diseno-moda-presentado-percha-madera-scaled.jpg");
+  background-position: center;
+}
+
+.banner--promociones {
+  background-image: url("https://www.posicionamiento-webs.com/wp-content/uploads/2019/09/Errores-que-debes-evitar-al-hacer-promociones.jpg");
+  background-position: center;
+}
+
+.banner--historia {
+  background-image: url("https://www.comunidadbaratz.com/wp-content/uploads/Sabes-cuales-son-los-libros-mas-vendidos-de-2017-a-traves-de-Internet-en-Espana.jpg");
+  background-position: center;
+}
+
+.banner--contacto {
+  background-image: url("https://newwweb.net/sites/default/files/2020-03/contacto.jpg");
+  background-position: bottom 90px;
+}
+
+.barra {
+  grid-area: barra;
+  background-color: rgb(63, 60, 46);
+  z-index: 1;
+  width: 100%;
+}
+
+.barra__logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.barra__logo h1 {
+  font-weight: bold;
+  font-size: 33px;
+  margin-top: 5px;
+  margin-left: 12px;
+}
+
+.barra__logo-img, .pie__logo-img {
+  height: 75px;
+  width: 85px;
+  border-radius: 150px;
+}
+
+.barra__menuitems {
+  justify-content: end;
+}
+
+.barra__menuitems a {
+  margin: 10px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: large;
+}
+
+.barra__menuitems a:hover {
+  color: #d2c1b0;
+}
+
+.contacto {
+  grid-area: contacto;
+}
+
+.contacto p {
+  text-align: center;
+}
+
+.contacto__form {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5%;
+  border-radius: 10px;
+  background-color: brown;
+  padding: 10px;
+  align-items: center;
+  max-width: 100%;
+}
+
+.contacto__form__btn button {
+  width: 200px;
+  transition: all 0.2s ease-in-out !important;
+}
+
+.contacto__form__btn button:hover {
+  transform: scale(1.1) !important;
+}
+
+.contacto__form__input {
+  width: 500px !important;
+}
+
+.contacto__form__input--mensaje {
+  height: 170px !important;
+}
+
+.grid-container, .grid-container--contacto, .grid-container--promociones, .grid-container--productos, .grid-container--historia, .grid-container--index {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto;
+  overflow-y: hidden;
+}
+
+.grid-container--index {
+  grid-template-areas: "barra barra barra barra barra" "banner banner banner banner banner" "productos productos productos productos productos" "arte-cafe arte-cafe arte-cafe arte-cafe arte-cafe" "visitanos visitanos visitanos visitanos visitanos" "pie pie pie pie pie";
+}
+
+.grid-container--historia {
+  grid-template-areas: "barra barra barra barra barra" "banner banner banner banner banner" "historia historia historia historia historia" "visitanos visitanos visitanos visitanos visitanos" "pie pie pie pie pie";
+}
+
+.grid-container--productos {
+  grid-template-areas: "barra barra barra barra barra" "banner banner banner banner banner" "nuestros-productos nuestros-productos nuestros-productos nuestros-productos nuestros-productos" "visitanos visitanos visitanos visitanos visitanos" "pie pie pie pie pie";
+}
+
+.grid-container--promociones {
+  grid-template-areas: "barra barra barra barra barra" "banner banner banner banner banner" "resenas resenas resenas resenas resenas" "visitanos visitanos visitanos visitanos visitanos" "pie pie pie pie pie";
+}
+
+.grid-container--contacto {
+  grid-template-areas: "barra barra barra barra barra" "banner banner banner banner banner" "contacto contacto contacto contacto contacto" "visitanos visitanos visitanos visitanos visitanos" "pie pie pie pie pie";
+}
+
+/*Footer*/
+.pie {
+  grid-area: pie;
+  background-color: rgb(83, 80, 57);
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  align-items: center;
+  justify-content: space-around;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.pie__logo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.pie__logo p {
+  margin-top: 15px;
+  margin-left: 5px;
+}
+
+.pie__redessociales_logo {
+  height: 70px;
+  width: 70px;
+}
+
+/*Futuro Perfume*/
+.perfume {
+  grid-area: visitanos;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5%;
+  background-color: #8f6d4a;
+  padding: 1%;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.perfume__collection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.perfume__collection-items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nuestros-productos {
+  grid-area: nuestros-productos;
+}
+
+.nuestros-productos__collection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.nuestros-productos__collection__item {
+  margin-top: 20px;
+  text-align: center;
+  height: 330px;
+  font-weight: bold;
+}
+
+.nuestros-productos__collection__item img {
+  height: 275px;
+}
+
+.card {
+  width: 18rem;
+}
+
+.productos {
+  grid-area: productos;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1/6;
+}
+
+.productos__collection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.productos__collection__card {
+  height: 395px;
+  width: 400px;
+  text-align: center;
+  margin: 10px;
+}
+
+.productos__collection__card img {
+  height: 300px;
+  width: 350px;
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+.productos__collection__card p {
+  margin-top: 5px;
+}
+
+.navbar-toggler {
+  border-color: white;
+}
+
+.navbar-nav {
+  --bs-nav-link-hover-color: #ffffff;
+}
+
+.navbar {
+  background-color: rgb(64, 66, 90);
+}
+
+.historia {
+  grid-area: historia;
+}
+.historia__collection {
+  width: 100%;
+}
+.historia__collection img {
+  height: 320px;
+  margin: 5px;
+  border-radius: 10px;
+}
+.historia__collection_card, .historia__collection_card--two {
+  display: flex;
+  background-color: #faebd7;
+  padding: 5px;
+  width: 100%;
+  align-items: center;
+  border-radius: 50% solid white;
+  max-width: 100%;
+}
+.historia__collection_card--two {
+  text-align: end;
+  margin-top: 20px;
+}
+.historia__collection_card p, .historia__collection_card--two p {
+  padding: 10px;
+}
+
+/*# sourceMappingURL=main.css.map */

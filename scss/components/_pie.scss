@@ -1,0 +1,49 @@
+
+/*Footer*/
+.pie {
+    grid-area: pie;
+    background-color: rgb(83, 80, 57);
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    align-items: center;
+    justify-content: space-around;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  .pie__logo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .pie__logo p {
+    margin-top: 15px;
+    margin-left: 5px;
+  }
+  .pie__redessociales_logo {
+    height: 70px;
+    width: 70px;
+  }
+  
+/*Futuro Perfume*/
+  .perfume{
+  grid-area: visitanos;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5%;
+  background-color: $color-background-perfume;
+  padding: 1%;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.perfume__collection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.perfume__collection-items {
+  display: flex;
+  flex-wrap: wrap;
+}

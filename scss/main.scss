@@ -1,0 +1,18 @@
+
+/*SASS*/
+// Config
+@import "./config/vars";  
+@import "./config/reset";  
+@import "./config/mixins";  
+
+
+// Componentes
+@import "./components/index";
+@import "./components/banner";
+@import "./components/barra";
+@import "./components/contacto";
+@import "./components/grid-container";
+@import "./components/pie";
+@import "./components/productos";
+@import "./components/navbar.scss";        
+@import "./components/historia.scss"

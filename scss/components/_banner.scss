@@ -1,0 +1,45 @@
+.banner {
+    grid-area: banner;
+    display: flex;
+    border-radius: 10px;
+    background-color: $background-color-banners;
+    background-size: cover;
+    background-position: center;
+    justify-content: end;
+    height: 320px;
+    margin: 0.5%;
+    max-width: 100%;
+    grid-column: 1/6;
+  }
+  .banner p {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 45px;
+    display: flex;
+    align-items: center;
+    margin-right: 10%;
+    height: 85%;
+  }
+  .banner--index {
+    background-image: url("https://img.freepik.com/fotos-premium/ilustracion-vectorial-fondo-o-banner-camisetas-coloridas_719646-697.jpg");
+  }
+  
+  .banner--productos {
+    background-image: url("https://www.copiplan.com.uy/wp-content/uploads/2023/06/camiseta-grafica-mockup-diseno-moda-presentado-percha-madera-scaled.jpg" );
+    background-position: center;
+  }
+
+  .banner--promociones {
+    background-image: url("https://www.posicionamiento-webs.com/wp-content/uploads/2019/09/Errores-que-debes-evitar-al-hacer-promociones.jpg" );
+    background-position: center;
+  }
+
+  .banner--historia {
+    background-image: url("https://www.comunidadbaratz.com/wp-content/uploads/Sabes-cuales-son-los-libros-mas-vendidos-de-2017-a-traves-de-Internet-en-Espana.jpg" );
+    background-position: center;
+  }
+ 
+  .banner--contacto {
+    background-image: url("https://newwweb.net/sites/default/files/2020-03/contacto.jpg");
+    background-position: bottom 90px;
+  }

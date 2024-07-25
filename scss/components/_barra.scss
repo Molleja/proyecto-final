@@ -1,0 +1,35 @@
+.barra {
+    grid-area: barra;
+    background-color: rgb(63, 60, 46);
+    z-index: 1;
+    width: 100%;
+  }
+  .barra__logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+  }
+  .barra__logo h1 {
+    font-weight: bold;
+    font-size: 33px;
+    margin-top: 5px;
+    margin-left: 12px;
+  }
+  .barra__logo-img, .pie__logo-img {
+    height: 75px;
+    width: 85px;
+    border-radius: 150px;
+  }
+  .barra__menuitems {
+    justify-content: end;
+  }
+  .barra__menuitems a {
+    margin: 10px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: large;
+  }
+  .barra__menuitems a:hover {
+    color: #d2c1b0;
+  }
